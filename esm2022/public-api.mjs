@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of my-library
+ */
+export * from './lib/my-library.service';
+export * from './lib/my-library.component';
+// https://lukasz-zielinski.pl/blog/posts/2021-05-16-jak-stworzy%C4%87-swoj%C4%85-w%C5%82asn%C4%85-bibliotek%C4%99-przy-pomocy-angulara/
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL215LWxpYnJhcnkvc3JjL3B1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLDBCQUEwQixDQUFDO0FBQ3pDLGNBQWMsNEJBQTRCLENBQUM7QUFFM0Msd0lBQXdJIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBteS1saWJyYXJ5XG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvbXktbGlicmFyeS5zZXJ2aWNlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL215LWxpYnJhcnkuY29tcG9uZW50JztcblxuLy8gaHR0cHM6Ly9sdWthc3otemllbGluc2tpLnBsL2Jsb2cvcG9zdHMvMjAyMS0wNS0xNi1qYWstc3R3b3J6eSVDNCU4Ny1zd29qJUM0JTg1LXclQzUlODJhc24lQzQlODUtYmlibGlvdGVrJUM0JTk5LXByenktcG9tb2N5LWFuZ3VsYXJhL1xuIl19
