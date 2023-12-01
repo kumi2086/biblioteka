@@ -1,0 +1,38 @@
+@import "./colors";
+@import "./variables.scss";
+
+@font-face {
+  font-family: "Lumen";
+  src: url("../fonts/Lumen-Linear-Icon-Font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  display: inline-block;
+  font: normal normal normal 22px Lumen;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.absui-icon--add-circle:before,
+.absui-icon--add-circle-visible::before {
+  content: "\e147";
+  font-size: 16px;
+  font-size: 1.12rem !important;
+  -webkit-text-stroke-width: 0.02em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.absui-icon--remove-circle-outline:before {
+  content: "\e15d";
+  font-size: 16px;
+}
+
+.numberbox-spin-down-icon::before {
+  content: "\e15b";
+  font-size: 16px;
+  top: 12px;
+}
