@@ -45,7 +45,7 @@ export declare class WaproDateBoxComponent implements OnInit, ControlValueAccess
     constructor(cd: ChangeDetectorRef);
     ngOnInit(): void;
     initMessages(): void;
-    getLocale(): string;
+    getLocale(): any;
     addDay: () => void;
     openBox: () => void;
     onOpened: () => void;

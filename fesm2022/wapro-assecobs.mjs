@@ -1143,8 +1143,11 @@ class WaproDateBoxComponent {
         loadMessages(enMessages);
     }
     getLocale() {
-        var locale = localStorage.getItem('lang');
-        return locale != null ? locale : 'pl';
+        var locale;
+        if (typeof window !== 'undefined') {
+            locale = window.localStorage.getItem('lang');
+            return locale != null ? locale : 'pl';
+        }
     }
     writeValue(value) {
         this.myValue = value;
