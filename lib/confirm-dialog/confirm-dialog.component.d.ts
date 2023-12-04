@@ -7,13 +7,14 @@ import * as i0 from "@angular/core";
 export declare class ConfirmDialogComponent implements OnInit, AfterViewInit {
     event: EventService;
     cd: ChangeDetectorRef;
-    onRemoving: EventEmitter<true | GroupMessage | RadioBoxType[] | CheckBoxType[] | {
+    onRemoving: EventEmitter<true | GroupMessage | CheckBoxType[] | RadioBoxType[] | {
         checkBoxList: CheckBoxType[];
         radioBoxList: RadioBoxType[];
     }>;
     onClosing: EventEmitter<any>;
     onCanceling: EventEmitter<any>;
     onDynamicBtnClicked: EventEmitter<any>;
+    onDestroy: EventEmitter<any>;
     nobtn: DxButtonComponent;
     yesbtn: DxButtonComponent;
     cancelbtn: DxButtonComponent;
@@ -24,9 +25,9 @@ export declare class ConfirmDialogComponent implements OnInit, AfterViewInit {
     confirmHeader: string;
     confirmText: string;
     disableRefreshShortcut: boolean;
-    dynamicBtns: DynamicButton[];
-    genius: GeniusSummaryGroup[];
-    groupMsg: GroupMessage;
+    dynamicBtns: DynamicButton[] | any;
+    genius: GeniusSummaryGroup[] | any;
+    groupMsg: GroupMessage | any;
     isVisible: boolean;
     kindDialog: KindDialog;
     paramsMsg: {
@@ -55,5 +56,5 @@ export declare class ConfirmDialogComponent implements OnInit, AfterViewInit {
     onDynamicBtnArrowLeft(i: any): void;
     onDynamicBtnArrowRight(i: any): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<ConfirmDialogComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<ConfirmDialogComponent, "app-confirm-dialog", never, { "btnConfig": { "alias": "btnConfig"; "required": false; }; "checkBoxList": { "alias": "checkBoxList"; "required": false; }; "confirmHeader": { "alias": "confirmHeader"; "required": false; }; "confirmText": { "alias": "confirmText"; "required": false; }; "disableRefreshShortcut": { "alias": "disableRefreshShortcut"; "required": false; }; "dynamicBtns": { "alias": "dynamicBtns"; "required": false; }; "genius": { "alias": "genius"; "required": false; }; "groupMsg": { "alias": "groupMsg"; "required": false; }; "isVisible": { "alias": "isVisible"; "required": false; }; "kindDialog": { "alias": "kindDialog"; "required": false; }; "paramsMsg": { "alias": "paramsMsg"; "required": false; }; "radioBoxList": { "alias": "radioBoxList"; "required": false; }; "showIcon": { "alias": "showIcon"; "required": false; }; "textAligne": { "alias": "textAligne"; "required": false; }; "title": { "alias": "title"; "required": false; }; "width": { "alias": "width"; "required": false; }; }, { "onRemoving": "onRemoving"; "onClosing": "onClosing"; "onCanceling": "onCanceling"; "onDynamicBtnClicked": "onDynamicBtnClicked"; }, never, never, true, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ConfirmDialogComponent, "app-confirm-dialog", never, { "btnConfig": { "alias": "btnConfig"; "required": false; }; "checkBoxList": { "alias": "checkBoxList"; "required": false; }; "confirmHeader": { "alias": "confirmHeader"; "required": false; }; "confirmText": { "alias": "confirmText"; "required": false; }; "disableRefreshShortcut": { "alias": "disableRefreshShortcut"; "required": false; }; "dynamicBtns": { "alias": "dynamicBtns"; "required": false; }; "genius": { "alias": "genius"; "required": false; }; "groupMsg": { "alias": "groupMsg"; "required": false; }; "isVisible": { "alias": "isVisible"; "required": false; }; "kindDialog": { "alias": "kindDialog"; "required": false; }; "paramsMsg": { "alias": "paramsMsg"; "required": false; }; "radioBoxList": { "alias": "radioBoxList"; "required": false; }; "showIcon": { "alias": "showIcon"; "required": false; }; "textAligne": { "alias": "textAligne"; "required": false; }; "title": { "alias": "title"; "required": false; }; "width": { "alias": "width"; "required": false; }; }, { "onRemoving": "onRemoving"; "onClosing": "onClosing"; "onCanceling": "onCanceling"; "onDynamicBtnClicked": "onDynamicBtnClicked"; "onDestroy": "onDestroy"; }, never, never, true, never>;
 }
