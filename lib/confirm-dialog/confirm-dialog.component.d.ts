@@ -7,7 +7,7 @@ import * as i0 from "@angular/core";
 export declare class ConfirmDialogComponent implements OnInit, AfterViewInit {
     event: EventService;
     cd: ChangeDetectorRef;
-    onRemoving: EventEmitter<true | GroupMessage | CheckBoxType[] | RadioBoxType[] | {
+    onRemoving: EventEmitter<true | GroupMessage | RadioBoxType[] | CheckBoxType[] | {
         checkBoxList: CheckBoxType[];
         radioBoxList: RadioBoxType[];
     }>;
